@@ -252,3 +252,116 @@ main {
     padding: 0 15px 15px;
     color: #666;
 }
+
+
+/* Add after existing styles */
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.client-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.client-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.client-position {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.newsletter p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 1em;
+}
+
+.newsletter-form button {
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .newsletter-form button {
+        width: 100%;
+    }
+}
