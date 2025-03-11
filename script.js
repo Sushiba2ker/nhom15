@@ -22,3 +22,16 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const newsletterForm = document.getElementById('newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert(`Thank you for subscribing! We'll send updates to ${email}`);
+            this.reset();
+        });
+    }
+});
