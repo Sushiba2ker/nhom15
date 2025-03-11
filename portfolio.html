@@ -5,6 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-links a.active {
+            border-bottom: 2px solid #fff;
+        }
+        .intro {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #fff;
+        }
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .portfolio-item {
+            background-color: #fff;
+            margin: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+        .portfolio-info {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -25,19 +80,34 @@
     </nav>
 
     <main>
-        <h1>Portfolio</h1>
-        <div class="portfolio-grid">
+        <section class="intro">
+            <h1>James Don</h1>
+            <p>Photographer</p>
+        </section>
+        <section class="portfolio-gallery">
             <div class="portfolio-item">
                 <img src="images/project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of project 1</p>
+                <div class="portfolio-info">
+                    <h3>Project 1</h3>
+                    <p>Short description of Project 1.</p>
+                </div>
             </div>
             <div class="portfolio-item">
                 <img src="images/project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of project 2</p>
+                <div class="portfolio-info">
+                    <h3>Project 2</h3>
+                    <p>Short description of Project 2.</p>
+                </div>
             </div>
-        </div>
+            <div class="portfolio-item">
+                <img src="images/project3.jpg" alt="Project 3">
+                <div class="portfolio-info">
+                    <h3>Project 3</h3>
+                    <p>Short description of Project 3.</p>
+                </div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </section>
     </main>
 
     <script src="script.js"></script>
